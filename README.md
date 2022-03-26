@@ -1,5 +1,2 @@
-# XD
-a = Twoja stara
-b = Twój stary
-a+b=c
-c = TY 
+a-b=c
+hkashu
