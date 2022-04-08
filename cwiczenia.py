@@ -1,12 +1,11 @@
-def trojka(n):
-    if n==0:
-        return 0
-    if n == 1:
-        return 1
+def NWD(x, y):
+    if x % y == 0:
+        return y
     else:
-        return n + trojka(n - 1)
+        return NWD(y, x % y)
 def main():
-    for i in range(0, 11):
-        print(i, "!=", trojka(i))
+    a = int(input("podaj liczbe a "))
+    b = int(input("podaj liczbe b "))
+    print(f'NWD({a}, {b}) = {NWD(a,b)}')
+
 main()
-import tkinter as tk
